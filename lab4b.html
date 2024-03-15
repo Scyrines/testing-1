@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Lab 4b</title>
+</head>
+
+<body>
+    <script src="forms.js"></script>
+    <form name="frmResult" onsubmit="return submitForm()">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" name="address"></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="city"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" onclick="submitForm()">Submit form</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" onclick="resetForm()">Reset</button>
+                </td>
+            </tr>
+        </table>
+        <textarea name="results" cols="30" rows="7"></textarea>
+    </form>
+
+    
+    
+</body>
