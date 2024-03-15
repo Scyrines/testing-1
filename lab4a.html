@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>Lab 4a</title>
+
+   <style>
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+   </style>
+   <script src="marksCalculator.js"></script>
+</head>
+<body onload="">
+   <table >
+    <tr>
+        <td>Mark:</td>
+        <td><input id="mark1" type="text"></td>
+    </tr>
+    <tr>
+        <td>Mark:</td>
+        <td><input id="mark2" type="text"></td>
+    </tr>
+    <tr>
+        <td>Mark:</td>
+        <td><input id="mark3" type="text"></td>
+    </tr>
+    <tr>
+        <td>Mark:</td>
+        <td><input id="mark4" type="text"></td>
+    </tr>
+    <tr>
+        <td>
+            <input id="findTotal" type="radio" name="find" value="1"/>
+            <label for="findTotal">Find total</label>
+        </td>
+        <td>
+            <input id="findAverage" type="radio" name="find" value="2"/>
+            <label for="findAverage">Find average</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button id="submit" onclick="calculate()">Submit</button>
+        </td>
+        <td>
+            <button id="clear" onclick="clearForm()">Clear</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Result:</td>
+        <td><input id="result" type="text" disabled="disabled" style="background-color: white; color: black;"></td>
+    </tr>
+   </table>
+</body>
+</html>
